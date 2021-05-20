@@ -19,6 +19,6 @@ class LoginController extends Controller
             'passWord' => 'required'
         ]);
 
-        auth()->attempt();
+        
     }
 }

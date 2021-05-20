@@ -33,7 +33,7 @@
                        
                     </div>
                     <div class="mb-6 pt-3 bg-gray-200 rounded-lg border-b-4 border-gray-300 focus:border-purple-400 transition duration-500 @error('city') border-red-500 @enderror ">
-                        {{-- <label for="city" class="block text-gray-700 text-sm font-bold mb-2 ml-3">City</label> --}}
+                        {{-- <label  for="city" class="block text-gray-700 text-sm font-bold mb-2 ml-3">City</label> --}}
                         <fieldset class="block text-gray-700 text-sm font-bold mb-2 ml-3 "> 
                             <legend>Choose your class city</legend>
                         
