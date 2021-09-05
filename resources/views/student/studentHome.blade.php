@@ -2,6 +2,6 @@
 
 @section('content')
 
-    <a href="{{ route('studentViewCourses') }}">Courses</a>
-    <a href="{{ route('studentAddCourses') }}">Add Courses</a>
+  student home
+  <a href="{{ route('logout') }}">logout</a>
 @endsection

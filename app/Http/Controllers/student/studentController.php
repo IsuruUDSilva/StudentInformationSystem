@@ -9,7 +9,6 @@ class studentController extends Controller
 {
     
     public function index(){
-        dd(auth()->user());
         return view('student.studentHome');
     }
 

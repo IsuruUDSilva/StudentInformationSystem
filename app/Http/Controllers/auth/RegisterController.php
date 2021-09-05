@@ -7,6 +7,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use phpDocumentor\Reflection\Types\Nullable;
 
 class RegisterController extends Controller
 {
@@ -28,8 +29,8 @@ class RegisterController extends Controller
                 'city' => 'required',
                 'email' => 'required|max:255',
                 'dob' => 'required',
-                'userName' => 'required|max:255',
-                'passWord' => 'required'
+                'username' => 'required|max:255',
+                'password' => 'required'
             ]
         );
 
@@ -39,14 +40,15 @@ class RegisterController extends Controller
             'city' => $request->city,
             'email' => $request->email,
             'dob' => $request->dob,
-            'userName' => $request->userName,
-            'passWord' => Hash::make($request->passWord)
+            'roll_id' => $request->role_id,
+            'username' => $request->username,
+            'password' => Hash::make($request->password)
 
         ]);
 
         // Auth::attempt(['email' => $email, 'password' => $password])
 
 
-        return redirect()->route('studentHome');
+        return redirect()->route('activate');
     }
 }

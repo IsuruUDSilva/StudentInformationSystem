@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>IICA</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -57,19 +57,20 @@
                         <p class="text-gray-700">Sign in to your account</p>
                     </section>
                     <section class="mt-6">
-                        <form action="#" method="POST" class="flex flex-col">
+                        <form action="{{ route('login') }}" method="POST" class="flex flex-col">
+                            @csrf
                             <div class="mb-6 pt-3 bg-gray-200 rounded-lg ">
                                 <label for="userName" class="block text-gray-700 text-sm font-bold mb-2 ml-3">Username</label>
-                                <input type="text" name="username" id="UserName" class="bg-gray-200 rounded-lg w-full focus:outline-none border-b-4 border-gray-300 focus:border-purple-400 transition duration-500 px-3 pb-3" >
+                                <input type="text" name="email" id="UserName" class="bg-gray-200 rounded-lg w-full focus:outline-none border-b-4 border-gray-300 focus:border-purple-400 transition duration-500 px-3 pb-3" >
                             </div>
                             <div class="mb-6 pt-3 bg-gray-200 rounded-lg">
                                 <label for="passWord" class="block text-gray-700 text-sm font-bold mb-2 ml-3">Password</label>
-                                <input type="password" name="passWord" id="passWord" class="bg-gray-200 rounded-lg w-full focus:outline-none border-b-4 border-gray-300 focus:border-purple-400 transition duration-500 px-3 pb-3">
+                                <input type="password" name="password" id="passWord" class="bg-gray-200 rounded-lg w-full focus:outline-none border-b-4 border-gray-300 focus:border-purple-400 transition duration-500 px-3 pb-3">
                             </div>
                             <div class="flex justify-end">
                                 <a href="#" class="mb-3 text-blue-400 hover:text-green-400">Forgot your password?</a>
                             </div>
-                            <button class="bg-gradient-to-r from-green-400 to-blue-400 hover:from-pink-500 hover:to-yellow-500 px-full py-1 rounded-lg" type="submit">Sign In</button>
+                            <button type="submit" class="bg-gradient-to-r from-green-400 to-blue-400 hover:from-pink-500 hover:to-yellow-500 px-full py-1 rounded-lg" type="submit">Sign In</button>
                         </form>
                         <div class="p-4 flex justify-center">
                             <span class="mr-2">Don't have an Account?</span>

@@ -62,12 +62,12 @@
                     </div>
                     <div class="mb-6 pt-3 bg-gray-200 rounded-lg ">
                         <label for="userName" class="block text-gray-700 text-sm font-bold mb-2 ml-3">Username</label>
-                        <input type="text" name="userName" id="UserName" class="bg-gray-200 rounded-lg w-full focus:outline-none border-b-4 border-gray-300 focus:border-purple-400 transition duration-500 px-3 pb-3 @error('userName') border-red-500 @enderror" >
+                        <input type="text" name="username" id="UserName" class="bg-gray-200 rounded-lg w-full focus:outline-none border-b-4 border-gray-300 focus:border-purple-400 transition duration-500 px-3 pb-3 @error('userName') border-red-500 @enderror" >
                     
                     </div>
                     <div class="mb-6 pt-3 bg-gray-200 rounded-lg">
                         <label for="passWord" class="block text-gray-700 text-sm font-bold mb-2 ml-3">Password</label>
-                        <input type="password" name="passWord" id="passWord" class="bg-gray-200 rounded-lg w-full focus:outline-none border-b-4 border-gray-300 focus:border-purple-400 transition duration-500 px-3 pb-3 @error('passWord') border-red-500 @enderror">
+                        <input type="password" name="password" id="passWord" class="bg-gray-200 rounded-lg w-full focus:outline-none border-b-4 border-gray-300 focus:border-purple-400 transition duration-500 px-3 pb-3 @error('passWord') border-red-500 @enderror">
                     
                     </div>
                     
