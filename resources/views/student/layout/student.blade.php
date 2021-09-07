@@ -15,7 +15,7 @@
             {{-- logo --}}
             
             <div class="text-2xl font-extrabold py-2 text-center">IICA</div>
-            <div class="text-xl font-extrabold text-center">Teacher</div>
+            <div class="text-xl font-extrabold text-center">Student</div>
 
             <nav class="py-2">
                 <a href="{{ route('studentHome') }}" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-400 hover:text-white">

@@ -36,8 +36,14 @@ Route::get('adminHome', [adminController::class,'index'])->name('adminHome')->mi
 Route::get('adminTeacher',[adminController::class,'adminTeacher'])->name('adminTeacher')->middleware(['admin']);
 Route::get('adminStudent',[adminController::class,'adminStudent'])->name('adminStudent')->middleware(['admin']);
 Route::get('adminCourses',[adminController::class,'adminCourses'])->name('adminCourses')->middleware(['admin']);
-Route::get('adminAddStudent',[adminController::class,'adminAddStudent'])->name('adminAddStudent')->middleware(['admin']);
-
+Route::get('adminAddMember',[adminController::class,'adminAddMember'])->name('adminAddMember')->middleware(['admin']);
+// Route::get('edit/{id}','adminController@adminAddMember')->name('adminAddMember');
+Route::get('edit/{id}',[adminController::class,'adminEditMember'])->name('adminEditMember')->middleware(['admin']);
+Route::post('edit/{id}',[adminController::class,'adminUpdateType'])->name('adminUpdateMember')->middleware(['admin']);
+Route::get('editStudent/{id}',[adminController::class,'adminEditStudent'])->name('adminEditStudent')->middleware(['admin']);
+Route::get('deleteStudent/{id}',[adminController::class,'adminDeleteStudent'])->name('adminDeleteStudent')->middleware(['admin']);
+Route::get('editTeacher/{id}',[adminController::class,'adminEditTeacher'])->name('adminEditTeacher')->middleware(['admin']);
+Route::get('deleteTeacher/{id}',[adminController::class,'adminDeleteTeacher'])->name('adminDeleteTeacher')->middleware(['admin']);
 
 //----------------------------------------------student-----------------------------------
 Route::get('studentHome', [studentController::class,'index'])->name('studentHome')->middleware(['student']);
@@ -48,5 +54,7 @@ Route::get('studentViewCourses',[studentController::class,'studentViewCourses'])
 Route::get('teacherHome',[teacherController::class,'index'])->name('teacherHome')->middleware(['teacher']);
 Route::get('teacherAddCourses',[teacherController::class,'teacherAddCourses'])->name('teacherAddCourses')->middleware(['teacher']);
 Route::get('teacherViewCourses',[teacherController::class,'teacherViewCourses'])->name('teacherViewCourses')->middleware(['teacher']);
-Route::get('teacherAddStudent',[teacherController::class,'teacherAddStudent'])->name('teacherAddStudent')->middleware(['teacher']);
-Route::get('teacherStudent',[teacherController::class,'teacherStudent'])->name('teacherStudent')->middleware(['teacher']);
+Route::get('teacherEditStudent/{id}',[teacherController::class,'teacherEditStudent'])->name('teacherEditStudent')->middleware(['teacher']);
+Route::post('teacherEditStudent/{id}',[teacherController::class,'teacherUpdateType'])->name('teacherUpdateType')->middleware(['teacher']);
+Route::get('teacherStudentControl',[teacherController::class,'teacherStudentControl'])->name('teacherStudentControl')->middleware(['teacher']);
+// Route::get('teacherDeleteStudent/{id}',[teacherController::class,'teacherDeleteStudent'])->name('teacherDeleteStudent')->middleware(['teacher']);

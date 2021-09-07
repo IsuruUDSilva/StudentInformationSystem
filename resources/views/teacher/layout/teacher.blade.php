@@ -21,7 +21,7 @@
                 <a href="{{ route('teacherHome') }}" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-400 hover:text-white">
                       Home
                 </a>
-                <a href="{{ route('teacherStudent') }}" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-400 hover:text-white">
+                <a href="{{ route('teacherStudentControl') }}" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-400 hover:text-white">
                   Students
                 </a>
                 <a href="{{ route('teacherViewCourses') }}" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-400 hover:text-white">
