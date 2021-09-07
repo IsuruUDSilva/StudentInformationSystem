@@ -29,6 +29,7 @@
         </tr>
         @endforeach
         </table>
+        {{ $users->links() }}
         <div class="mt-10">
             <a href="{{ route('adminAddMember') }}" class=" py-2.5 px-4 rounded transition duration-200 hover:bg-green-400 hover:text-white bottom-0 left-4 ">Add a Teacher</a>
         </div>

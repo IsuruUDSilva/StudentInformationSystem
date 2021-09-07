@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="757acccd-4c2e-4ec2-8ffb-6a58880a3754" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/admin/adminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/admin/adminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/teacher/teacherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/teacher/teacherController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/adminHome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/adminHome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/adminStudent/adminAddStudent.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/adminStudent/adminStudentControl.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/adminStudent/adminStudentControl.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/adminTeacher/adminAddTeacher.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/adminTeacher/adminTeacherControl.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/adminTeacher/adminTeacherControl.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/student/layout/student.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/student/layout/student.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/teacher/Student/teacherAddStudent.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/teacher/Student/teacherStudentControl.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/teacher/Student/teacherStudentControl.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/teacher/layout/teacher.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/teacher/layout/teacher.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/teacher/teacherHome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/teacher/teacherHome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="757acccd-4c2e-4ec2-8ffb-6a58880a3754" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
